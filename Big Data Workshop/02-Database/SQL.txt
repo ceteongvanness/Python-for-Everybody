@@ -1,0 +1,22 @@
+
+You Will need FireFox for this - Chrome and Safari will not work
+
+https://addons.mozilla.org/en-us/firefox/addon/sqlite-manager/
+
+CREATE  TABLE Users ("email" TEXT, "name" TEXT)
+
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@umich.edu')
+
+DELETE FROM Users WHERE email='ted@umich.edu'
+
+UPDATE Users SET name='Charles' WHERE email='csev@umich.edu'
+
+SELECT * FROM Users
+
+SELECT * FROM Users WHERE email='csev@umich.edu'
+
+SELECT * FROM Users ORDER BY email
+
+SELECT * FROM Users ORDER BY name
+
+CREATE TAPE Pages (id INTEGER PROIMARY KEY, url TEXT UNIQUE, html TEXT, old_rank INTEGER
